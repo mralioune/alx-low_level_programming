@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * main -
+ * main - is positive or negative
+ *
  */
 int main(void)
 {
