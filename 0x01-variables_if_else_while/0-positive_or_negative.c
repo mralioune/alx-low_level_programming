@@ -4,7 +4,8 @@
 
 /**
  * main - is positive or negative
- *
+ * print new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
