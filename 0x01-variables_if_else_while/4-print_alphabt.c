@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - is positive or negative
+ * main - is ipositive or negative
  * print new line
  * Return: Always 0 (Success)
  */
@@ -18,4 +18,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}
+i}
