@@ -19,7 +19,7 @@ void print_to_98(int a)
 				printf(", ");
 			else
 				printf("\n");
-			a++;
+			a--;
 		}
 	}
 	else
