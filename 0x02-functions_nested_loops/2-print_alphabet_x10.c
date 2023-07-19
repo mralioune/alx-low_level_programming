@@ -3,8 +3,6 @@
 
 /**
  * print_alphabet_x10 - Write a function that prints the alphabet
- * @alphabet: char
- * @    /num: char
  * Return: void print_alphabet void
  *You can only use _putchar twice in your code
  */
