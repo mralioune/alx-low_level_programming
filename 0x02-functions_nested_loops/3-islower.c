@@ -3,7 +3,8 @@
 
 /**
  * _islower - Write a program that prints _putchar, followed by a new line
- * Return: The program should return 0 or 1
+ * @c: int  checking character
+ * Return: if c is not lower  return 0 else 1
  */
 
 int _islower(int c)
