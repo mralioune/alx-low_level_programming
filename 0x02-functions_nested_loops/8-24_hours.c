@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,7 +9,7 @@ void jack_bauer(void)
 {
 	int heure, minute;
 
-	for (heure = 0 ; heure <= 23 ; heure++)
+	for (heure = 0 ; heure < 24 ; heure++)
 	{
 		for (minute = 0 ; minute <= 59 ; minute++)
 		{
