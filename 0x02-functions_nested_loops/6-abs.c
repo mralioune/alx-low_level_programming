@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _abs - Write a program that prints _putchar, followed by a new line
