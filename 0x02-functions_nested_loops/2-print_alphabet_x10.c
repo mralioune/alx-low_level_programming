@@ -11,17 +11,17 @@ int print_alphabet_x10(void)
 {
 	char alphabet;
 	int numb;
+	numb = 1;
 
 	alphabet = 'a';
-	for (numb = 0 ; numb < 10 ; numb++)
+	while( numb <= 10)
 	{
 		while (alphabet <= 'z')
 		{
 			_putchar(alphabet);
 			alphabet++;
 		}
-		_putchar(alphabet);
-	}
-	_putchar('\n');
+		_putchar('\n');
+	
 	return (0);
 }
