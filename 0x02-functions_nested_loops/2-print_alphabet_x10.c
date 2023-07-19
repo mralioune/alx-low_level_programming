@@ -13,7 +13,7 @@ int print_alphabet_x10(void)
 	int num;
 
 	alphabet = 'a';
-	for (numb = 0 ; numb <= 10 ; numb++)
+	for (numb = 0 ; numb < 10 ; numb++)
 	{
 		while (alphabet <= 'z')
 		{
