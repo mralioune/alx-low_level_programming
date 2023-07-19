@@ -2,7 +2,6 @@
 
 /**
  * jack_bauer - computes the absolute value of an integer.
- *
  */
 
 void jack_bauer(void)
