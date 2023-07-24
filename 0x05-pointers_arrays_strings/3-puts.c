@@ -18,4 +18,4 @@ int _strlen(int *s)
 	}
 
 	return (c);
-}
+
