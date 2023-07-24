@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _puts - hat prints a string, followed by a new line, to stdout
- * @s: input parametre
+ *  _puts - hat prints a string
+ * @str: input parametre
  * Return : s
  */
 
