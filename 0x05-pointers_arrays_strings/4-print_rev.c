@@ -9,6 +9,7 @@
 void print_rev(char *str)
 {
 	int a = 0;
+
 	while (str != '\0')
 	{
 		a++;
