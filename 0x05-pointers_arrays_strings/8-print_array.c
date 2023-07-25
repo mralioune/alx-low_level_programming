@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_arrayi - hat prints a string
+ * print_array - hat prints a string
  * @a: input parametre
  * @n: input
  * Return : s
