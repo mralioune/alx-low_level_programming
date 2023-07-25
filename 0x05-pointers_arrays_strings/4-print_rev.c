@@ -1,17 +1,21 @@
 #include "main.h"
 
 /**
- *  _puts - hat prints a string
+ *  print_rev - hat prints a string
  * @str: input parametre
  * Return : s
  */
 
-void _puts(char *str)
+void print_rev(char *str)
 {
-	while (*str != '\0')
+	int a = 0;
+	while (str != '\0')
 	{
-		_putchar(*str);
-		str++;
+		a++;
+	}
+	for (; a 0; a--)
+	{
+		_putchar(str[a-1])
 	}
 
 	_putchar("\n");
