@@ -19,7 +19,7 @@ void rev_string(char *str)
 	{
 		c = str[b];
 		str[b] = str[a - 1];
-		sts[a --] = c;
+		sts[a--] = c;
 	}
 
 	_putchar('\n');
