@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *  print_rev - hat prints a string
+ *  _puts - hat prints a string
  * @str: input parametre
  * Return : s
  */
 
-void print_rev(char *str)
+void _puts(char *str)
 {
 	while (*str != '\0')
 	{
