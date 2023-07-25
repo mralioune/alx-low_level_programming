@@ -25,5 +25,4 @@ void rev_string(char *str)
 		str[e--] = c;
 	}
 
-	_putchar('\n');
 }
