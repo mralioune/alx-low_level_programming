@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *  _puts2 - hat prints a string
+ * puts2 - hat prints a string
  * @str: input parametre
  * Return : s
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int a = 0;
 
