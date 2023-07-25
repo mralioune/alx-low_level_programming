@@ -19,7 +19,7 @@ void puts_half(char *str)
 		b = (a / 2) - 1;
 		while (str[c] != '\0')
 		{
-			if (c >= b)
+			if (c > b)
 				_putchar(str[c]);
 			c++;
 		}
