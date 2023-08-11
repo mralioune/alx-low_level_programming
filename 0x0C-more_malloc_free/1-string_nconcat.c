@@ -1,38 +1,53 @@
 #include <stdlib.h>
+#include <stdlib.h>
 #include "main.h"
-
 /**
- * string_nconcat - concatenates two strings with n value
- * for the second value
- * @s1: string 1 ( begining)
- * @s2: string 2 ( second string)
- * @n: lenght of string input from s2
- * Return: a pointer to the allocated memory or NULL
+ * _strlen - calculate and return string length
+ * @string: string
+ * Return: string length
+ */
+int _strlen(char *string)
+{
+	int i;
+
+	for (i = 0; string[i] != '\0'; i++)
+		;
+	return (i);
+}
+/**
+ * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
+ * @s1: string 1
+ * @s2: string 2
+ * @n: n bytes to concat from string 2
+ * Return: pointer to concatenated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i = 0, j = 0, k = 0, l = 0, limit;
-	char *a;
+	char *ptr;
+	int num, len, i, j;
 
-	if (s1 == NULL)
+	num = n;
+
+	if (s1 == NULL) /* account for NULL strings */
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[i] != '\0')
-		i++;
-	while (s2[j] != '\0')
-		j++;
-	a = malloc((i + n + 1) * sizeof(char));
-	if (a == NULL)
+	if (num < 0) /* account for negative n bytes */
 		return (NULL);
-	for (k = 0; k < i; k++)
-		a[k] = s1[k];
-	if (n >= j)
-		limit = j;
-	else
-		limit = n;
-	for (l = 0; l < limit; k++, l++)
-		a[k] = s2[l];
-	a[k] = '\0';
-	return (a);
+	if (num >= _strlen(s2)) /* account for n too big */
+		num = _strlen(s2);
+
+	len = _strlen(s1) + num + 1; /* +1 to account for null pointer */
+
+	ptr = malloc(sizeof(*ptr) * len); /* malloc and check for error */
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; s1[i] != '\0'; i++) /* concat */
+		ptr[i] = s1[i];
+	for (j = 0; j < num; j++)
+		ptr[i + j] = s2[j];
+	ptr[i + j] = '\0';
+
+	return (ptr);
 }
