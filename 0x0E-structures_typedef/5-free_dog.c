@@ -2,9 +2,9 @@
 #include "dog.h"
 
 /**
- * free_dog - free dog
- * @d: the struct to free
- */
+* free_dog - free dog
+* @d: the struct to free
+*/
 void free_dog(dog_t *d)
 {
 	if (d)
