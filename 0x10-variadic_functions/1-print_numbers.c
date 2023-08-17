@@ -3,26 +3,27 @@
 #include <stdarg.h>
 
 /**
-* print_numbers - Returns the sum of all its parameters
-* @n: number of given input
-* @separator: separator for numbers
-* Return: prints numbers, followed by a new line
-*/
-
+ * print_numbers - Prints numbers, followed by a new line.
+ * @separator: The string to be printed between numbers.
+ * @n: The number of integers passed to the function.
+ * @...: A variable number of numbers to be printed.
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list sl;
-	unsigned int i;
+	va_list nums;
+	unsigned int index;
 
-	for (i = 0 ; i < n ; i++)
+	va_start(nums, n);
+
+	for (index = 0; index < n; index++)
 	{
-		if (!separator)
-			printf("%d", va_arg(sl, int));
-		else if (separator && i == 0)
-			printf("%d", va_arg(sl, int));
-		else
-			printf("%s%d", separator, va_arg(sl, int));
+		printf("%d", va_arg(nums, int));
+
+		if (index != (n - 1) && separator != NULL)
+			printf("%s", separator);
 	}
-	va_end(sl);
+
 	printf("\n");
+
+	va_end(nums);
 }
