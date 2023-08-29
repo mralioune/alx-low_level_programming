@@ -6,12 +6,12 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	size_t line = 0;
+	size_t size = 0;
 
 	while (h)
 	{
 		h = h->next;
-		line++;
+		size++;
 	}
-	retur (line);
+	return (size);
 }
